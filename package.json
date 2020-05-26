@@ -1,0 +1,22 @@
+{
+	"name": "google",
+	"version": "1.0.0",
+	"description": "This is a test drive",
+	"main": "index.html",
+	"scripts": {
+		"start": "npm run lite",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lite": "lite-server"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://margariinka@bitbucket.org/margariinka/projectx.git"
+	},
+	"author": "Rita The-Saver",
+	"license": "ISC",
+	"homepage": "https://bitbucket.org/margariinka/projectx#readme",
+	"devDependencies": {
+		"lite-server": "^2.5.4",
+		"prettier": "^2.0.5"
+	}
+}
