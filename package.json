@@ -16,7 +16,11 @@
 	"license": "ISC",
 	"homepage": "https://bitbucket.org/margariinka/projectx#readme",
 	"devDependencies": {
+		"gulp": "^4.0.2",
+		"gulp-postcss": "^8.0.0",
+		"gulp-pxtorem": "^3.0.0",
 		"lite-server": "^2.5.4",
+		"postcss-pixels-to-rem": "^0.8.0",
 		"prettier": "^2.0.5"
 	}
 }

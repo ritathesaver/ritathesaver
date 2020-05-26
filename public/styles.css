@@ -3,14 +3,14 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-family: Arial, sans-serif;
 }
 
 hr {
 	margin: 0;
 	border: 0;
-	height: 1px;
+	height: 0.0625rem;
 	background-color: #dfe1e5;
 }
 
@@ -26,7 +26,7 @@ button {
 }
 
 .container {
-	max-width: 1500px;
+	max-width: 93.75rem;
 	margin: 0 auto;
 }
 
@@ -40,17 +40,17 @@ button {
 	z-index: 1000;
 }
 .nav {
-	margin-top: 15px;
-	margin-right: 29px;
+	margin-top: 0.9375rem;
+	margin-right: 1.8125rem;
 }
 .nav__items {
 	display: flex;
-	margin-top: 5px;
+	margin-top: 0.3125rem;
 	justify-content: flex-end;
 	align-items: center;
 }
 .item {
-	margin: 0 10px;
+	margin: 0 0.625rem;
 }
 .nav__link {
 	text-decoration: none;
@@ -62,7 +62,7 @@ button {
 	text-decoration: underline;
 }
 .nav__menu-img {
-	height: 16px;
+	height: 1rem;
 
 	opacity: 0.5;
 	transition: color .3s linear;
@@ -71,78 +71,61 @@ button {
 	opacity: 1;
 }
 .nav__sign_up {
-	border-radius: 3px;
+	border-radius: 0.1875rem;
 	border: none;
 	background-color: #4486f6;
 	color: white;
-	padding: 8px 19px;
+	padding: 0.5rem 1.1875rem;
 	text-align: center;
 }
 .nav__sign_up:hover {
-	box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 0.0625rem 0.0625rem rgba(0, 0, 0, 0.5);
 }
 .section {
-	margin-top: 160px;
+	margin-top: 10rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
 .logo img {
-	width: 280px;
-	padding-bottom: 30px;
+	width: 17.5rem;
+	padding-bottom: 1.875rem;
 }
-.search-form__input {
-	width: 500px;
-	height: 47px;
-	border: 1px solid #dfe1e5;
-	border-radius: 30px;
-}
-.search-form__icon img {
-	position: relative;
-	top: 2px;
-	margin-left: 15px;
-	height: 14px;
-	width: 14px;
-	opacity: 0.6;
-}
-.search-form__keyboard img {
-	position: relative;
-	top: 2px;
-	left: 4px;
-	height: 20px;
-	width: 20px;
-	cursor: pointer;
-}
-
 .search-form__input input {
+	width: 31.25rem;
+	height: 2.9375rem;
+	border: 0.0625rem solid #dfe1e5;
+	border-radius: 1.875rem;
 	background-color: transparent;
-	border: 0;
-	height: 47px;
-	width: 400px;
-	margin: 0 auto;
-
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg'),
+		url('https://clipartart.com/images/voice-icon-clipart-2.png'),
+		url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Keyboard-icon_Wikipedians.svg/75rem-Keyboard-icon_Wikipedians.svg.png');
+	background-position: 0.9375rem 0.9375rem, 28.75rem 0.75rem, 25.9375rem 0.75rem;
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-size: 1rem, 1.375rem, 2.125rem;
+	padding-left: 2.5rem;
 	outline: none;
 	transition: color .4s linear;
 }
-.search-form__input:hover {
-	border: 1px solid white;
-	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+.search-form__input input:hover {
+	border: 0.0625rem solid white;
+	box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2);
 }
 
 .search-form__buttons button {
-	margin-top: 20px;
-	padding: 10px 20px;
-	border-radius: 3px;
-	border: 1px solid #dfe1e54b;
+	margin-top: 1.25rem;
+	padding: 0.625rem 1.25rem;
+	border-radius: 0.1875rem;
+	border: 0.0625rem solid #dfe1e54b;
 	background-color: #f4f4f4;
 	color: #707070;
 }
 .search-form__buttons button:hover {
-	border: 1px solid #afafaf;
+	border: 0.0625rem solid #afafaf;
 }
 .search-form_description {
-	padding: 20px;
+	padding: 1.25rem;
 }
 .search-form_description a {
 	color: darkblue;
@@ -156,31 +139,31 @@ button {
 .footer {
 	width: 100%;
 	position: absolute;
-
 	bottom: 0;
 	background: #f2f2f2;
 }
+.footer__items {
+	color: #707070;
+	padding: 0.9375rem 0.625rem 0.9375rem;
+	margin: 0 1.5625rem;
+}
 
 .footer__row1 {
-	color: #707070;
-	padding: 15px 10px 15px;
-	margin: 0 20px;
-
-	font-size: 15px;
+	font-size: 0.9375rem;
+	margin-bottom: 0.9375rem;
 }
 
 .footer__row2 a {
 	text-decoration: none;
 	color: #707070;
-	padding-right: 15px;
+	padding-right: 0.9375rem;
 }
 
 .footer__row2 a:hover {
 	text-decoration: underline;
 }
 .footer__row2 {
-	padding: 15px 10px 15px;
-	margin: 0 20px;
+	margin-top: 0.9375rem;
 	display: flex;
 
 	justify-content: space-between;
