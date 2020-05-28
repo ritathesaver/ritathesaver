@@ -1,8 +1,24 @@
-var gulp = require('gulp');
-var postcss = require('gulp-postcss');
-var pixelstorem = require('postcss-pixels-to-rem');
+const gulp = require('gulp');
+const postcss = require('gulp-postcss');
+const pixelstorem = require('postcss-pixels-to-rem');
+const rfs = require('rfs');
 
-gulp.task('css', function() {
-	var plugins = [ pixelstorem() ];
-	gulp.src('./styles.css').pipe(postcss(plugins)).pipe(gulp.dest('public'));
+const options = {
+	twoDimensional: false,
+	baseValue: 20,
+	unit: 'rem',
+	breakpoint: 1200,
+	breakpointUnit: 'px',
+	factor: 10,
+	class: false,
+	unitPrecision: 6,
+	safariIframeResizeBugFix: false,
+	remValue: 16
+};
+
+gulp.task('default', () => {
+	return gulp
+		.src('./styles.css')
+		.pipe(postcss([ rfs(options), pixelstorem() ]))
+		.pipe(gulp.dest('./public'));
 });
