@@ -144,6 +144,7 @@ button {
 .search-form__minIcon img {
 	height: 0.75rem;
 	width: 0.75rem;
+	filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
 	display: none;
 }
 .search-form__keyboard {
@@ -253,7 +254,7 @@ button {
 		width: 85%;
 	}
 	.search-form__input button {
-		display: block;
+		display: inline-block;
 
 		padding: 5% 5%;
 		background: #2196f3;
