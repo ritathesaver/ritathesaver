@@ -142,8 +142,8 @@ button {
 	opacity: 0.6;
 }
 .search-form__minIcon img {
-	height: 0.75rem;
-	width: 0.75rem;
+	height: 0.84rem;
+	width: 0.89rem;
 	filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
 	display: none;
 }
@@ -187,6 +187,7 @@ button {
 	border: 0.0625rem solid #afafaf;
 }
 .search-form_description {
+	text-align: center;
 	padding: 1.25rem;
 }
 .search-form_description a {
@@ -229,6 +230,9 @@ button {
 	justify-content: space-between;
 }
 @media only screen and (max-width: 500px) {
+	.container {
+		font-size: 0.7rem;
+	}
 	.section {
 		width: 80%;
 	}
@@ -257,15 +261,16 @@ button {
 		display: inline-block;
 
 		padding: 5% 5%;
-		background: #2196f3;
+		background: #4486f6;
 
 		border: none;
 		border-radius: 0 1.875rem 1.875rem 0;
 	}
 
-	.footer__row2 {
-		font-size: 0.8rem;
+	.footer__row1 {
+		font-size: 0.9rem;
 	}
+
 	.search-form__minIcon img {
 		display: inline-block;
 	}
