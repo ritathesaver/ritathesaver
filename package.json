@@ -16,13 +16,17 @@
 	"license": "ISC",
 	"homepage": "https://bitbucket.org/margariinka/projectx#readme",
 	"devDependencies": {
+		"font-awesome": "^4.7.0",
 		"gulp": "^4.0.2",
 		"gulp-postcss": "^8.0.0",
 		"gulp-pxtorem": "^3.0.0",
 		"lite-server": "^2.5.4",
 		"postcss-pixels-to-rem": "^0.8.0",
+		"postcss-responsive-font": "^1.0.6",
 		"prettier": "^2.0.5",
 		"rfs": "^9.0.3"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"fa-icons": "^0.2.0"
+	}
 }

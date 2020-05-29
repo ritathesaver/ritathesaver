@@ -24,7 +24,7 @@ button {
 }
 
 .container {
-	font-size: rfs(0.875rem);
+	font-size: 0.875rem;
 	font-family: Arial, sans-serif;
 
 	max-width: 93.75rem;
@@ -38,11 +38,22 @@ button {
 .header {
 	flex: 0 0 auto;
 	width: 100%;
-	margin-bottom: 5rem;
+	margin-bottom: calc(1.625rem + 4.5vw);
+}
+
+@media (min-width: 1200px) {
+	.header {
+		margin-bottom: 5rem;
+	}
 }
 .nav {
 	margin-top: 0.9375rem;
-	margin-right: 1.8125rem;
+	margin-right: calc(1.30625rem + 0.675vw);
+}
+@media (min-width: 1200px) {
+	.nav {
+		margin-right: 1.8125rem;
+	}
 }
 .nav__items {
 	display: flex;
@@ -95,7 +106,12 @@ button {
 .logo {
 	display: flex;
 	justify-content: center;
-	padding-bottom: rfs(1.875rem);
+	padding-bottom: calc(1.3125rem + 0.75vw);
+}
+@media (min-width: 1200px) {
+	.logo {
+		padding-bottom: 1.875rem;
+	}
 }
 .logo img {
 	max-width: 100%;
@@ -108,11 +124,12 @@ button {
 	border: 0.0625rem solid #dfe1e5;
 	border-radius: 1.875rem;
 }
+.search-form__input button {
+	display: none;
+}
 .search-form__icon {
-	display: inline;
-
-	position: relative;
-	top: 0.125rem;
+	float: left;
+	margin-top: 0.9375rem;
 	margin-left: 0.9375rem;
 }
 .search-form__icon img {
@@ -122,10 +139,8 @@ button {
 	opacity: 0.6;
 }
 .search-form__keyboard {
-	display: inline;
-	position: relative;
-	top: 0.200rem;
-	left: 0.25rem;
+	float: right;
+	margin-top: 0.7375rem;
 	cursor: pointer;
 }
 .search-form__keyboard img {
@@ -134,7 +149,7 @@ button {
 }
 
 .search-form__input input {
-	max-width: 100%;
+	padding: 0 10px;
 	background-color: transparent;
 	border: 0;
 	height: 2.9375rem;
@@ -214,6 +229,29 @@ button {
 
 	.search-form__buttons {
 		display: none;
+	}
+	.search-form__icon {
+		display: none;
+	}
+	.search-form__keyboard {
+		display: none;
+	}
+	.search-form__input {
+		width: 120%;
+	}
+	.search-form__input input {
+		padding-left: 20px;
+		width: 85%;
+	}
+	.search-form__input button {
+		display: inline-block;
+
+		padding: 10px;
+		background: #2196f3;
+		color: white;
+		font-size: 17px;
+		border: 1px solid grey;
+		border-left: none; /* Prevent double borders */
 	}
 
 	.footer__row2 {

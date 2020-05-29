@@ -19,6 +19,6 @@ const options = {
 gulp.task('default', () => {
 	return gulp
 		.src('./styles.css')
-		.pipe(postcss([ rfs(options), pixelstorem() ]))
+		.pipe(postcss([ rfs(options) ]))
 		.pipe(gulp.dest('./public'));
 });
