@@ -10,11 +10,11 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://margariinka@bitbucket.org/margariinka/projectx.git"
+		"url": "git+https://github.com/ritathesaver/google_page.git"
 	},
 	"author": "Rita The-Saver",
 	"license": "ISC",
-	"homepage": "https://bitbucket.org/margariinka/projectx#readme",
+	"homepage": "https://ritathesaver.github.io/google_page/",
 	"devDependencies": {
 		"font-awesome": "^4.7.0",
 		"git": "^0.1.5",

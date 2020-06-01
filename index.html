@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./public/styles.css">
     <title>Google</title>
     <link rel="google icon" href="https://www.google.com/favicon.ico" type="image/x-icon">
-    <link\ rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
+    
     
 </head>
 <body>
@@ -16,7 +16,28 @@
             <div class="nav__items">
                 <a class="nav__link item"  href="#">Почта</a>
                 <a class="nav__link item"  href="#">Картинки</a>
-                <a class><img class="nav__menu-img item" src="https://image.flaticon.com/icons/svg/566/566001.svg"></img></a>
+            <div class="dropdown">
+                <img onclick="myFunction()" class="nav__menu-img item dropbtn" src="https://image.flaticon.com/icons/svg/566/566001.svg"></img>
+                <div id="myDropdown" class="dropdown-content">
+                    <ul class="dropdown-menu">
+                    <li><div class="menu-item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Google_account_icon.svg/1200px-Google_account_icon.svg.png"></img></div><div>Аккаунт</div></li>
+                    <li><div class="menu-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/768px-Google_%22G%22_Logo.svg.png"></img></div><div>Поиск</div></li>
+                    <li><div class="menu-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1200px-Google_Maps_icon_%282020%29.svg.png"></img></div><div>Карты</div></li>
+                    <li><div class="menu-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1200px-YouTube_full-color_icon_%282017%29.svg.png"></img></div><div>YouTube</div></li>
+                    <li><div class="menu-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Google_Play_symbol.svg/1200px-Google_Play_symbol.svg.png"></img></div><div>Play</div></li>
+                    <li><div class="menu-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/New_Logo_Gmail.svg"></img></div><div>Почта</div></li>
+                    <li><div class="menu-item"><img src="https://www.gstatic.com/images/branding/product/2x/meet_96dp.png"></img></div><div>Meet</div></li>
+                    <li><div class="menu-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Google_Contacts_icon.svg/768px-Google_Contacts_icon.svg.png"></img></div><div>Контакты</div></li>
+                    <li><div class="menu-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_Drive_logo.svg/555px-Google_Drive_logo.svg.png"></img></div><div>Диск</div></li>
+                    <li><div class="menu-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Google_Calendar_icon.svg/1200px-Google_Calendar_icon.svg.png"></img></div><div>Календарь</div></li>
+                    <li><div class="menu-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Google_Translate_logo.svg/768px-Google_Translate_logo.svg.png"></img></div><div>Переводчик</div></li>
+                    <li><div class="menu-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Google_Photos_icon.svg/768px-Google_Photos_icon.svg.png"></img></div><div>Фото</div></li>
+                    <li><div class="menu-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Google_Duo_icon.svg/1200px-Google_Duo_icon.svg.png"></img></div><div>Duo</div></li>
+                </ul>
+                <div class="menu__more-button"> <button>Другие приложения и продукты от Google</button></div>
+      
+                </div>
+            </div>
                 <button class="nav__sign_up item">Вход</button>
             </div>
         </nav>
@@ -60,23 +81,24 @@
         <hr>
         
         <div class="footer__row2">
-            <span class="footer__column1">
-                <a href="#">Реклама</a>
-                <a href="#">Для бизнеса</a>
-                <a href="#">Всё о Google</a>
-                <a href="#">Как работает Google Поиск</a>
-            </span>
-            <span class="footer__column2" >
-                <a href="#">Конфиденциальность</a>
-                <a href="#">Условия</a>
-                <a href="#">Настройка</a>
-            </span>
+            <div class="footer__column1">
+                <span class="footer_item"><a href="#">Реклама</a></span>
+                <span class="footer_item"><a href="#">Для бизнеса</a></span>
+                <span class="footer_item"><a href="#">Всё о Google</a></span>
+                <span class="footer_item"><a href="#">Как работает Google Поиск</a></span>
+            </div>
+            <div class="footer__column2" >
+                <span class="footer_item"><a href="#">Конфиденциальность</a></span>
+                <span class="footer_item"><a href="#">Условия</a></span>
+                <span class="footer_item"> <a href="#">Настройка</a></span>
+            </div>
         </div>
     </div>
 
 </footer>
 
 </div>
+<script src="source.js"></script>
 
 </body>
 </html>
